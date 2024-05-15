@@ -1,0 +1,75 @@
+.header-name-nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.Judul-Nama{
+    margin-left: 20px;
+}
+
+.Pilihan-Navigasi{
+
+}
+
+.Pilihan-Navigasi-Style{
+    color: black;
+    text-decoration: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    font-size: 16px;
+}
+
+.Pilihan-Navigasi-Style:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.profil-form-css{
+    display: flex;
+    justify-content: center;
+}
+
+.border-image{
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profil-name-work{
+    text-align: center;
+}
+
+.Portfolio-form-css{
+    
+}
+
+.modul-form-css{
+    display: flex;
+    flex-direction: row;
+}
+
+.HTML-css{
+    /* background-color: orange; */
+    display: inline-block;
+    border: 1px solid orange;
+    padding: 150px 320px;
+}
+
+.CSS-css{
+    /* background-color: orange; */
+    display: inline-block;
+    border: 1px solid blue;
+    padding: 150px 320px;
+}
+
+.image-fix-res{
+    width: auto;
+    height: 500px;
+    margin-left: -25%;
+}
