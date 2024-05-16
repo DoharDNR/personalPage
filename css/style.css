@@ -1,12 +1,11 @@
 .header-name-nav{
     display: flex;
     justify-content: space-between;
-    /* background-color: green; */
 }
 
-.Judul-Nama{
+/* .Judul-Nama{
     margin-left: 20px;
-}
+} */
 
 /* .Pilihan-Navigasi{
 
@@ -25,6 +24,11 @@
 .Pilihan-Navigasi-Style:hover {
     background-color: #04AA6D;
     color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
 }
 
 .profil-form-css{
@@ -49,6 +53,10 @@
     
 } */
 
+.h1-1{
+    text-align: center;
+}
+
 .modul-form-css{
     display: flex;
     flex-direction: row;
@@ -61,6 +69,10 @@
     padding: 150px 320px;
 }
 
+.HTML-css:hover{
+    background-color: orange;
+}
+
 .CSS-css{
     /* background-color: orange; */
     display: inline-block;
@@ -68,8 +80,24 @@
     padding: 150px 320px;
 }
 
+.CSS-css:hover{
+    background-color: blue;
+}
+
 .image-fix-res{
     width: auto;
     height: 500px;
     margin-left: -25%;
+}
+
+@media(max-width:1400px){
+    .modul-form-css{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:720px){
+    .header-name-nav{
+        flex-direction: column;
+    }
 }
