@@ -112,6 +112,10 @@ main{
         flex-direction: column;
     }
 
+    .Judul-Nama{
+        margin-left: unset;
+    }
+
     .Pilihan-Navigasi{
         display: flex;
         flex-wrap: wrap;
@@ -140,5 +144,19 @@ main{
     .CSS-css{
         margin-inline: auto;
         padding: 60px 165px;
+    }
+}
+
+@media(max-width:321px){
+    .HTML-css{
+        padding: 60px 120px;
+    }
+
+    .CSS-css{
+        padding: 60px 135px;
+    }
+
+    .border-image{
+        margin-inline: 11%;
     }
 }
