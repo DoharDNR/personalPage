@@ -9,6 +9,11 @@
     color: black;
 }
 
+.Container-Judul{
+    display: flex;
+    justify-content: first baseline;
+}
+
 .Pilihan-Navigasi-Style{
     color: black;
     text-decoration: none;
