@@ -3,15 +3,9 @@
     justify-content: space-between;
 }
 
-.Judul-Nama{
-    padding:15px ;
-    text-decoration: none;
-    color: black;
-}
-
 .Container-Judul{
     display: flex;
-    justify-content: first baseline;
+    justify-content: baseline;
 }
 
 .Pilihan-Navigasi-Style{
@@ -40,8 +34,7 @@ main{
 }
 
 .frame-profil-css{
-    margin-top: 20%;
-    margin-bottom: 20%;
+    justify-items: center;
 }
 
 .border-image{
@@ -94,6 +87,14 @@ main{
     width: auto;
     height: 500px;
     margin-left: -25%;
+}
+
+/*--- Card Portfolio ---*/
+
+.card-portfolio{
+    display: inline-block;
+    padding: 150px 150px;
+    border: 1px solid gray;
 }
 
 /* Support Desktop --> Tablet */
