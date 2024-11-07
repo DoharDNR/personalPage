@@ -1,3 +1,7 @@
+.body{
+    background-color: #F5F7F8;
+}
+
 .header-name-nav{
     display: flex;
     justify-content: space-between;
@@ -47,25 +51,18 @@ main{
     text-align: center;
 }
 
-/* .Portfolio-form-css{
-    
-} */
-
 .h1-1{
     text-align: center;
 }
 
 .modul-form-css{
-    display: flex;
-    flex-direction: row;
-    column-gap: 15px;
+    display: inline-block;
 }
 
 .HTML-css{
-    /* margin-inline: auto; */
     display: inline-block;
     border: 1px solid orange;
-    padding: 150px 320px;
+    padding: 150px 270px;
 }
 
 .HTML-css:hover{
@@ -73,28 +70,41 @@ main{
 }
 
 .CSS-css{
-    /* margin-inline: auto; */
     display: inline-block;
     border: 1px solid blue;
-    padding: 150px 320px;
+    padding: 150px 270px;
 }
 
 .CSS-css:hover{
-    background-color: blue;
+    background-color: #0D92F4;
+}
+
+.JS-css{
+    display: inline-block;
+    border: 1px solid yellow;
+    padding: 150px 270px;
+}
+
+.JS-css:hover{
+    background-color: yellow;
 }
 
 .image-fix-res{
     width: auto;
     height: 500px;
-    margin-left: -25%;
 }
 
 /*--- Card Portfolio ---*/
 
+#toggleButton{
+    display: none;
+}
+
 .card-portfolio{
     display: inline-block;
-    padding: 150px 150px;
+    padding: 150px;
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 /* Support Desktop --> Tablet */
