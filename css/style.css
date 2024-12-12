@@ -130,6 +130,35 @@
     padding: 10px;
 }
 
+.profil-skill{
+    padding-top: 10vh;
+    color: white;
+    width: 100%;
+}
+
+.profil .container{
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.profil p{
+    padding-top: 10px;
+}
+
+.profil-skill h1{
+    text-align: center;
+    font-size: 5vh;
+}
+
+.profil-skill .icon{
+    clip-path: none;
+    width: 50px;
+    height: 50px;
+}
+
 .journey{
     display: grid;
     grid-template-columns: auto auto;
@@ -138,7 +167,7 @@
 }
 
 .education h1{
-    
+    padding-bottom: 2vh;
     font-size: 5vh;
 }
 
@@ -148,6 +177,7 @@
 
 .experience h1{
     font-size: 5vh;
+    padding-bottom: 2vh;
 }
 
 .experience ul{
@@ -156,7 +186,6 @@
 
 .certificate h1{
     font-size: 5vh;
-    text-align: center;
 }
 
 .certificate h2{
@@ -212,7 +241,7 @@
 
 .frame-contact li{
     text-align: center;
-    padding-bottom: 4vh;
+    padding-bottom: 5vh;
 }
 
 .frame-page{
@@ -221,135 +250,239 @@
 
 /* Support Desktop --> Tablet */
 
-@media(max-width:1800px){
+@media(max-width:1700px){
 
-    .image-fix-res{
-        width: 620px;
-        height: 620px;
+    .daftar-tools{
+        padding: 18vh;
     }
 
-    .HTML-css{
-        text-align: center;
-        padding: 150px 200px;
-    }
-    
-    .CSS-css{
-        text-align: center;
-        padding: 150px 200px;
-    }
-    
-    .JS-css{
-        text-align: center;
-        padding: 150px 200px;
+    .frame-page{
+        padding-bottom: 15vh;
     }
 }
 
 @media(max-width:1400px){
 
-    .image-fix-res{
-        width: 520px;
-        height: 520px;
-    }
-
-    .card-portfolio{
-        padding: 50px;
-    }
-
-    .HTML-css{
-        text-align: center;
-        padding: 50px 90px;
-    }
-    
-    .CSS-css{
-        text-align: center;
-        padding: 50px 100px;
-    }
-    
-    .JS-css{
-        text-align: center;
-        padding: 50px 100px;
+    .container h1{
+        font-size: 9vh;
     }
 }
 
-@media(max-width:750px){
-    .header-name-nav{
-        flex-direction: column;
-        align-items: center;
+@media(max-width:1300px){
+    .container h1{
+        font-size: 8vh;
+    }
+}
+
+@media(max-width:1200px){
+    .container h1{
+        font-size: 7vh;
     }
 
-    .image-fix-res{
-        width: 400px;
-        height: 400px;
+    .profil-skill{
+        padding-top: 9vh;
+    }
+}
+
+@media(max-width:1100px){
+    .container h1{
+        font-size: 6vh;
+    }
+}
+
+@media(max-width:950px){
+    .container h1{
+        font-size: 5vh;
     }
 
-    .card-portfolio{
+    .journey{
+        gap: 50px;
+    }
+
+    .education h1{
+        font-size: 3vh;
+    }
+
+    .education h2{
+        font-size: 15px;
+    }
+
+    .experience h1{
+        font-size: 3vh;
+    }
+
+    .experience h2{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:800px){
+    .container h1{
+        font-size: 4vh;
+    }
+
+    .journey{
+        gap: 10px
+    }
+
+    .profil-skill{
         padding: 25px;
     }
 
-    .HTML-css{
-        text-align: center;
-        padding: 25px 40px;
+    .profil-skill .container{
+        gap: 9vh;
     }
-    
-    .CSS-css{
-        text-align: center;
-        padding: 25px 50px;
+    .profil-skill h1{
+        font-size: 4vh;
     }
-    
-    .JS-css{
-        text-align: center;
-        padding: 25px 50px;
+}
+
+@media(max-width:700px){
+    .header-name-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*============================*/
+    .header-form-css{
+        height: 103vh;
+    }
+    .container h1{
+        padding: 20vh;
+        padding-top: 27vh;
+    }
+    .daftar-tools{
+        padding: 15vh;
+    }
+
+    .container h1{
+        font-size: 3vh;
+    }
+
+    .icon{
+        width: 100px;
+        height: 100px;
+    }
+
+    /*==========================*/
+
+    .profil{
+        height: 102vh;
+    }
+
+    .profil .image-fix-res{
+        width: 200px;
+        height: 200px;
+    }
+
+    .profil-name-work p{
+        font-size: 15px;
+    }
+
+    .profil-skill h1{
+        padding: 5vh;
+        padding-bottom: 3vh;
+    }
+
+    .profil-skill .container{
+        gap: 5vh;
+    }
+
+    .journey{
+        grid-template-columns: auto;
+    }
+
+    .education h1{
+        font-size: 30px;
+    }
+
+    .education h2{
+        font-size: 20px;
+    }
+
+    .education li{
+        font-size: 15px;
+    }
+
+    .experience h1{
+        font-size: 30px;
+    }
+
+    .experience h2{
+        font-size: 20px;
+    }
+
+    .experience li{
+        font-size: 15px;
+    }
+
+    .certificate h1{
+        font-size: 30px;
+    }
+
+    /*==========================*/
+
+    #project h1{
+        font-size: 50px;
     }
 }
 
 /* Support Desktop --> Tablet */
 /* Support Mobile Smartphone */
 
-@media(max-width:426px){
+@media(max-width:500px){
 
-    .header-name-nav{
-        flex-direction: column;
+    .container h1{
+        font-size: 30px;
+        padding: 10vh;
+        padding-top: 30vh;
     }
 
-    .Judul-Nama{
-        margin-left: unset;
+    .daftar-tools{
+        padding: 10vh;
+        padding-bottom: 20vh;
+    }
+    
+    .profil .image-fix-res{
+        width: 150px;
+        height: 150px;
     }
 
-    .Pilihan-Navigasi{
+    .profil p{
+        font-size: 10px;
+    }
+
+    .profil-skill h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .profil-skill .container{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .Pilihan-Navigasi-Style{
-        padding: 20px 50px;
-    }
+    /*============================*/
 
-    .image-fix-res{
-        height: 250px;
-        width: 250px;
-    }
-    .HTML-css{
-        margin-inline: auto;
-        padding: 60px 150px;
-    }
-
-    .CSS-css{
-        margin-inline: auto;
-        padding: 60px 165px;
+    .frame-mywebsite h1{
+        padding: 10px;
     }
 }
 
-@media(max-width:321px){
-    .HTML-css{
-        padding: 60px 120px;
+@media(max-width:460px){
+    .Pilihan-Navigasi{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 50px;
     }
 
-    .CSS-css{
-        padding: 60px 135px;
+    .container h1{
+        padding: 70px;
+        padding-top: 40vh;
     }
 
-    .border-image{
-        margin-inline: 11%;
+    .frame-page h1{
+        font-size: 80px;
     }
 }
