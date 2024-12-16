@@ -4,77 +4,178 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Website Portfolio Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        <style>
-            .hidden{
-                display: none;
-            }
-        </style>
     </head>
     <body>
-        <div class="header-name-nav">
-            <div class="Container-Judul">
-                <a href="index.html">Dohar Siregar</a>
+        <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Dohar Siregar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#project">Project</a>
+                        <a class="nav-link" href="#journey">Journey</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
             </div>
-            <div class="Pilihan-Navigasi">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#project">Project</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-        <hr>
+        </nav>
+
         <main>
-            <div class="panel landing-pages">
-                <section id="home">
-                    <div class="header-container">
-                        <div class="container">
+            <section id="home">
+                <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="container">
+                        <div class="text-center py-5">
                             <h1>Website Portfolio Landing Page</h1>
                         </div>
-                        <div class="daftar-tools">
-                            <div><img class="icon" src="icon/html.png" alt="icon-html"></div>
-                            <div><img class="icon" src="icon/css.png" alt="icon-css"></div>
-                            <div><img class="icon" src="icon/js-file.png" alt="icon-js"></div>
-                        </div>
-                        <div class="slide-button">
-                            <a href="#about">Slide Down To About</a>
+                        <div class="row text-center py-5">
+                            <div class="col"><img class="col-lg-5 img-fluid" src="icon/html.png" alt="icon-html"></div>
+                            <div class="col"><img class="col-lg-5 img-fluid" src="icon/css.png" alt="icon-css"></div>
+                            <div class="col"><img class="col-lg-5 img-fluid" src="icon/js-file.png" alt="icon-js"></div>
+                            <div class="col"><img src="icon/bootstrap.png" alt="" class="col-lg-5 img-fluid"></div>
                         </div>
                     </div>
-                </section>
-                <hr>
-                <section class="profil-form-css" id="about">
-                    <div class="profil">
-                        <div>
-                            <img src="img/profil.jpeg" alt="" class="image-fix-res">
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="shadow p3 mb-5 bg-body-tertiary rounded">
+                    <div class="row p-5 align-items-center">
+                        <div class="col text-center" id="foto-profil">
+                            <img src="img/profil.jpeg" alt="" class="img-fluid">
                         </div>
-                        <div class="profil-name-work">
-                            <h1>Dohar Siregar</h1>
+                        <div class="col">
+                            <h1>[ About ]</h1+>
+                            <h1>Dohar Siregar (Programmer)</h1>
                             <strong>Programmer</strong>
-                            <p>Hi, saya sedang membuat Landing Page menggunakan HTML, CSS dan Javascript. Hasilnya bisa dilihat di halaman ini.</p>
-                            <p>Saya ingin menjadi seorang programmer yang bisa membuat sebuah aplikasi sesuai dengan imajinasi dan kreativitas.</p>
-                            <p>Landing Page ini akan terus saya update seiring berjalannya waktu. dan saya juga sudah ada versi yang lebih oke dari ini</p>
+                            <p>Hi! saya Dohar, saya adalah seorang freelancer programmer dalam pembuatan game dan web selama 1 tahun. saya berfokus sebagai perancang apikasi dari mulai desain tampilan beserta interaksinya. saya sebagai programmer untuk mengutarakan imajinasi saya dalam bentuk apikasi/software.</p>
+                            <div class="col">
+                                <a href="" class="btn btn-outline-secondary">LinkedIn</a>
+                                <a href="" class="btn btn-outline-secondary">Instagram</a>
+                                <a href="" class="btn btn-outline-secondary">Youtube</a>
+                            </div>
                         </div>
-                        <div class="profil-skill">
-                            <h1>My Skill</h1>
-                            <div class="container">
-                                <div>
-                                    <img class="icon" src="icon/html.png" alt="icon-html">
-                                    <p>HTML</p>
+                    </div>
+                </div>
+
+                <div class="shadow p3 mb-5 bg-body-tertiary rounded">
+                    <div class="container">
+                        <div class="text-center py-5">
+                            <h1>[ My Skill ]</h1>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <img src="icon/html.png" alt="icon-html" class="col-lg-5 img-fluid">
+                                <p>HTML 5</p>
+                            </div>
+                            <div class="col">
+                                <img src="icon/css.png" alt="icon-css" class="col-lg-5 img-fluid">
+                                <p>CSS</p>
+                            </div>
+                            <div class="col">
+                                <img src="icon/bootstrap.png" alt="icon-js" class="col-lg-5 img-fluid">
+                                <p>Bootstrap 5</p>
+                            </div>
+                            <div class="col">
+                                <img src="icon/js-file.png" alt="icon-js" class="col-lg-5 img-fluid">
+                                <p>JS</p>
+                            </div>
+                        </div>
+
+                        <div class="row py-5 text-center">
+                            <div class="text-center p-5">
+                                <h1>[ Certificate ]</h1>
+                            </div>
+
+                            <div class="px-5">
+                                <a href="https://codepolitan.com/c/D0FSIDW" class="col text-center btn btn-outline-secondary">
+                                    <ul>
+                                        <h2>HTML Basic</h2>
+                                        <li>18 April 2024 -> 18 April 2027</li>
+                                    </ul>
+                                </a>
+                                <a href="https://codepolitan.com/c/UU4ENCJ" class="col text-center btn btn-outline-secondary">
+                                    <ul>
+                                        <h2>CSS Basic</h2>
+                                        <li>22 April 2024 -> 22 April 2027</li>
+                                    </ul>
+                                </a>
+                                <a href="https://codepolitan.com/c/6HALCOX" class="col text-center btn btn-outline-secondary">
+                                    <ul class="col">
+                                        <h2>Javascript</h2>
+                                        <li>12 Mei 2024 -> 12 Mei 2027</li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="project">
+                <div class="shadow p3 mb-5 bg-body-tertiary rounded">
+                    <div class="container text-center p-5">
+                        <div class="py-1">
+                            <h1>[ My Latest Works ]</h1>
+                        </div>
+                        <div class="row py-5 gap-2">
+                            <div class="card" style="width: 20rem;">
+                                <div class="image">
+                                    <img src="https://img.itch.zone/aW1nLzM5NTg4MjYuanBn/315x250%23c/PPKkGt.jpg" class="card-img-top img-fluid" alt="...">
                                 </div>
-                                <div>
-                                    <img class="icon" src="icon/css.png" alt="icon-css">
-                                    <p>CSS</p>
+                                <div class="middle text">
+                                    <a href="https://dnrskom.itch.io/shootertankgame-3d" class="fs-2 fw-bold">ShooterTank3D (Game)</a>
                                 </div>
-                                <div>
-                                    <img class="icon" src="icon/js-file.png" alt="icon-js">
-                                    <p>JS</p>
+                            </div>
+
+                            <div class="card" style="width: 20rem">
+                                <div class="image">
+                                    <img src="https://img.itch.zone/aW1nLzg1MjY1NzMucG5n/315x250%23c/b3icuA.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="middle text">
+                                    <a href="https://dnrskom.itch.io/shootertankgame-3d-educated-version" class="fs-2 fw-bold">ShooterTank3D Educated Version (Game)</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 20rem">
+                                <div class="image">
+                                    <img src="https://img.itch.zone/aW1nLzE0MzYxNDQ5LnBuZw==/315x250%23c/bzGchS.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="middle text">
+                                    <a href="https://dnrskom.itch.io/pong-pong" class="fs-2 fw-bold">Pong-Pong (Game)</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 20rem">
+                                <div class="image">
+                                    <img src="img/price-list.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="middle text">
+                                    <a href="https://dohardnr.github.io/TablePricing/" class="fs-2 fw-bold">Table Pricing (Website)</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="journey">
-                        <div class="education">
-                            <h1>My Education</h1>
+                </div>
+            </section>
+
+            <section id="journey">
+                <div class="shadow p3 mb-5 bg-body-tertiary rounded p-5">
+                    <div class="text-center">
+                        <h1>My Journey</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col py-5">
+                            <h1 class="fw-bold">Education</h1>
                             <div>
                                 <h2>Amikom University Of Yogyakarta</h2>
                                 <ul>
@@ -83,135 +184,56 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="experience">
-                            <h1>My Experience</h1>
-                            <h2>PT.Sebangku Jaya Abadi</h2>
-                            <ul>
-                                <li>Game Programmer</li>
-                                <li>2020 Okt -> 2020 Des</li>
-                            </ul>
-                        </div>
-                        <div class="certificate">
-                            <h1>Certificate</h1>
-                            <ul>
-                                <h2>HTML Basic</h2>
-                                <li>18 April 2024 -> 18 April 2027</li>
-                                <li><a href="https://codepolitan.com/c/D0FSIDW">https://codepolitan.com/c/D0FSIDW</a></li>
-                            </ul>
-                            <ul>
-                                <h2>CSS Basic</h2>
-                                <li>22 April 2024 -> 22 April 2027</li>
-                                <li><a href="https://codepolitan.com/c/UU4ENCJ">https://codepolitan.com/c/UU4ENCJ</a></li>
-                            </ul>
-                            <ul>
-                                <h2>Javascript</h2>
-                                <li>12 Mei 2024 -> 12 Mei 2027</li>
-                                <li><a href="https://codepolitan.com/c/6HALCOX">https://codepolitan.com/c/6HALCOX</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <hr>
-                <section id="project">
-                    <div class="frame-mywebsite">
-                        <h1>My Journey</h1>
-                    </div>
-                    <div class="portfolio">
-                        <div>
-                            <h2>High School, 2015</h2>
-                            <p>I know application that name Unity3d at time high school because curious how the game can created then i try this application but i can't make a game because i don't know how.</p>
-                            <img class="icon" src="icon/unity.png" alt="">
-                        </div>
-                        <div>
-                            <h2 class="year">2015</h2>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio">
-                        <div>
-                            <h2>Amikom University of Yogyakarta, 2017</h2>
-                            <p>i register in Amikom university and take major of information technology in 2017</p>
-                        </div>
-                        <div>
-                            <h2>2017</h2>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <div>
-                            <h2>My First Game, 2020</h2>
-                            <p>at that year, i learn how to make the game and make my first game and i upload my game to website itch.io.</p>
-                            <p>
-                                this link to my first game : <a href="https://dnrskom.itch.io/shootertankgame-3d">shootertankgame-3d</a>
-                            </p>
-                            <img src="https://img.itch.zone/aW1nLzM5NTg4MjYuanBn/315x250%23c/PPKkGt.jpg" alt="">
-                        </div>
-                        <div>
-                            <h2>2020</h2>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <div>
-                            <h2>Make the another game, 2022</h2>
-                            <p>because i so interested make the game, i make another game and i upload my game to same website</p>
-                            <p>
-                                this link to my upload game : <a href="https://dnrskom.itch.io/">dnrskom.itch.io</a>
-                            </p>
-                            <img src="https://img.itch.zone/aW1nLzg1MjY1NzMucG5n/315x250%23c/b3icuA.png" alt="">
-                        </div>
-                        <div>
-                            <h2>2022</h2>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <div>
-                            <h2>Try learn Web Programmer, 2023</h2>
-                            <p>the next i try learn Web Programmer and make my first landing page website</p>
-                            <div class="list-skill">
-                                <img class="icon" src="icon/html.png" alt="">
-                                <img class="icon" src="icon/css.png" alt="">
-                                <img class="icon" src="icon/js-file.png" alt="">
+                        <div class="col py-5 gap-5">
+                            <h1 class="fw-bold">My Experience</h1>
+                            <div>
+                                <h2>2020, Create a ShooterTank3D Game</h2>
+                                <p>i learn how to make the game and make my first game and i upload my game to website itch.io.</p>
+                                <p>
+                                    this link to my first game : <a href="https://dnrskom.itch.io/shootertankgame-3d">shootertankgame-3d</a>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>2020, PT.Sebangku Jaya Abadi</h2>
+                                <p>i work as a game programmer, i work a project make a video game with implementation of boardgame.</p>
+                                <ul>
+                                    <li>Game Programmer</li>
+                                    <li>2020 Okt -> 2020 Des</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>2023, Learn to be Web Programmer</h2>
+                                <p>the next i learn Web Programmer and make my first <a href="https://dohardnr.github.io/personalPage/">landing page website</a></p>
                             </div>
                         </div>
-                        <div>
-                            <h2>2023</h2>
-                            <div class="line"></div>
-                            <h2>Now</h2>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="shadow p3 mb-5 bg-body-tertiary rounded p-5">
+                    <div>
+                        <div class="text-center">
+                            <div>
+                                <h1 class="fw-bold">Contact Me</h1>
+                            </div>
+                            <div>
+                                <h2>Email</h2>
+                                <p>dohar.0172@students.amikom.ac.id</p>
+                            </div>
+                            <div>
+                                <h2>WhatsApp</h2>
+                                <p>+6282281235972</p>
+                            </div>
+                            <div>
+                                <h2>LinkedIn</h2>
+                                <p><a href="https://www.linkedin.com/in/dohar-siregar/">https://www.linkedin.com/in/dohar-siregar/</a></p>
+                            </div>
                         </div>
                     </div>
-                </section>
-                <hr>
-                <section class="frame-contact" id="contact">
-                    <div class="slide-button">
-                        <a href="#">Back To Home</a>
-                    </div>
-                    <div class="frame-page">
-                        <div>
-                            <h1>Contact Me</h1>
-                        </div>
-                        <ul>
-                            <h2>Email</h2>
-                            <li>dohar.0172@students.amikom.ac.id</li>
-                        </ul>
-                        <ul>
-                            <h2>WhatsApp</h2>
-                            <li>082281235972</li>
-                        </ul>
-                        <ul>
-                            <h2>LinkedIn</h2>
-                            <li><a href="https://www.linkedin.com/in/dohar-siregar/">https://www.linkedin.com/in/dohar-siregar/</a></li>
-                        </ul>
-                    </div>
-                    <div class="slide-button">
-                        <p>The Slide End</p>
-                    </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="js/app.js"></script>
     </body>
 </html>

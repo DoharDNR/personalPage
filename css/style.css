@@ -1,462 +1,75 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+body{
+    background-color: #ebf9ff;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+li{
     list-style: none;
 }
 
-html{
-    padding: 10px;
+.card{
+    padding: 0;
 }
 
-.body{
-    background-color: #F5F7F8;
-}
-
-/* section header-from-css */
-.header-container{
-    width: 100%;
-    max-height: 100vh;
-}
-
-.container h1{
-    padding: 100px;
-    font-size: 70px;
-    text-align: center;
-}
-
-.daftar-tools{
-    display: flex;
-    justify-content: space-around;
-    padding: 20vh;
-}
-
-.slide-button{
-    display: flex;
-    justify-content: center;
-}
-
-.slide-button a{
-    color: black;
-    text-decoration: none;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    background-color: white;
-    font-size: 16px;
-}
-
-.slide-button a:hover {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.icon{
-    width: 150px;
-    height: 150px;
-}
-
-.header-name-nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-.Container-Judul{
-    display: flex;
-    justify-content: baseline;
-}
-
-.Container-Judul a{
-    color: black;
-    text-decoration: none;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    background-color: white;
-    font-size: 16px;
-}
-
-.Container-Judul a:hover {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.Pilihan-Navigasi a{
-    color: black;
-    text-decoration: none;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    background-color: white;
-    font-size: 16px;
-}
-
-.Pilihan-Navigasi a:hover {
-    background-color: #04AA6D;
-    color: white;
-}
-
-/* ======================================================================= */
-
-.profil-form-css{
-    display: flex;
-}
-
-.profil{
-    background: linear-gradient(45deg, #ce49ff, #7700ff);
-    padding-top: 5vh;
-    justify-items: center;
-    border: 1px solid grey;
-    width: 40%;
-    height: 100vh;
-}
-
-.profil img{
-    clip-path: circle(50%);
-    width: 300px;
-    height: 300px;
-}
-
-.profil-name-work{
-    text-align: center;
-}
-
-.profil-name-work h1{
-    color: white;
-}
-
-.profil-name-work strong{
-    color: white;
-}
-
-.profil-name-work p{
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.profil-skill{
-    padding-top: 10vh;
-    color: white;
-    width: 100%;
-}
-
-.profil .container{
-    display: flex;
-    justify-content: center;
-    gap: 10vh;
-    padding: 10px;
-    text-align: center;
-}
-
-.profil p{
-    padding-top: 10px;
-}
-
-.profil-skill h1{
-    text-align: center;
-    font-size: 5vh;
-}
-
-.profil-skill .icon{
-    clip-path: none;
-    width: 50px;
-    height: 50px;
-}
-
-.journey{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 100px;
-    padding: 10px;
-}
-
-.education h1{
-    padding-bottom: 2vh;
-    font-size: 5vh;
-}
-
-.education ul{
-    padding-left: 20px;
-}
-
-.experience h1{
-    font-size: 5vh;
-    padding-bottom: 2vh;
-}
-
-.experience ul{
-    padding-left: 20px;
-}
-
-.certificate h1{
-    font-size: 5vh;
-}
-
-.certificate h2{
-    padding-top: 20px;
-}
-
-.certificate ul{
-    padding-left: 20px;
-}
-
-.certificate li{
-    padding-top: 10px;
-}
-
-.frame-mywebsite{
-    width: 100%;
-    height: 100vh;
-}
-
-.frame-mywebsite h1{
-    font-size: 10vh;
-    text-align: center;
-    padding-top: 40vh;
-}
-
-.portfolio{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-}
-
-.portfolio p{
-    max-width: 70vh;
-    align-items: center;
-}
-
-.portfolio .line{
-    border-left: 10px solid black;
-    width: 10px;
-    height: 500px;
-}
-
-.portfolio .icon{
-    max-width: 150px;
-    max-height: 150px;
-    padding: 10px;
-}
-
-.portfolio img{
-    padding: 100px;
-}
-
-.portfolio .list-skill{
-    text-align: center;
-    padding: 10px;
-    padding-top: 100px;
-}
-
-.portfolio iframe{
-    width: 100%;
-    height: 100vh;
-}
-
-.frame-contact{
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    padding: 1vh;
-}
-
-.frame-contact h1{
-    font-size: 10vh;
-    text-align: center;
-    padding-top: 20vh;
-    padding-bottom: 5vh;
-}
-
-.frame-contact h2{
-    padding-bottom: 2vh;
-}
-
-.frame-contact li{
-    text-align: center;
-    padding-bottom: 5vh;
-}
-
-.frame-page{
-    padding-bottom: 16vh;
-}
-
-/* Support Desktop --> Tablet */
-
-@media(max-width:1024px){
-    .profil-skill{
-        padding-top: 5px;
-    }
-}
-
-@media(max-width:770px){
-    .container h1{
-        font-size: 5vh;
-    }
-
-    .profil-name-work p{
-        font-size: 15px;
-    }
-
-    .profil .profil-skill .container{
-        gap: 50px;
-    }
-
-    .profil .profil-skill{
-        padding: 10px;
-    }
-
-    .profil-skill h1{
-        font-size: 30px;
-    }
-
-    .journey{
-        grid-template-columns: auto;
-        gap: 50px;
-    }
-
-    .education h1{
-        font-size: 3vh;
-    }
-
-    .education h2{
-        font-size: 15px;
-    }
-
-    .experience h1{
-        font-size: 3vh;
-    }
-
-    .experience h2{
-        font-size: 15px;
-    }
-}
-
-/* Support Desktop --> Tablet */
-/* Support Mobile Smartphone */
-
-@media(max-width:425px){
-
-    .header-name-nav{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header-name-nav .Pilihan-Navigasi{
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 100px;
-    }
-    .container h1{
-        font-size: 30px;
-        padding: 10vh;
-        padding-top: 30vh;
-    }
-
-    .daftar-tools{
-        padding: 10px;
-        padding-bottom: 20vh;
-    }
-
-    .daftar-tools .icon{
-        width: 100px;
-        height: 100px;
-    }
+.card:hover .image{
     
-    .profil .image-fix-res{
-        width: 100px;
-        height: 100px;
-    }
-
-    .profil p{
-        font-size: 10px;
-    }
-
-    .profil .profil-skill h1{
-        font-size: 20px;
-    }
-
-    .profil .profil-skill .container{
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .journey .certificate{
-        font-size: 10px;
-    }
-
-    .frame-mywebsite h1{
-        font-size: 60px;
-    }
-
-    .portfolio img{
-        padding: 10px;
-        width: 250px;
-        height: 250px;
-    }
-
-    .portfolio .list-skill .icon{
-        width: 100px;
-        height: 100px;
-    }
-
-    .frame-contact .frame-page h1{
-        font-size: 60px;
-    }
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
-@media(max-width:400px){
-    .header-container .container h1{
-        padding: 5vh;
-        padding-top: 20vh;
-    }
-
-    .certificate h1{
-        font-size: 30px;
-    }
-
-    .profil-name-work strong{
-        font-size: 15px;
-    }
-
-    .profil-skill .icon{
-        width: 30px;
-        height: 30px;
-    }
-
-    .portfolio img{
-        width: 200px;
-        height: 200px;
-    }
-
-    .portfolio .list-skill .icon{
-        width: 80px;
-        height: 80px;
-    }
+.card:hover .middle{
+    opacity: 1;
 }
 
-@media(max-width:350px){
-    .header-container .daftar-tools .icon{
-        width: 80px;
-        height: 80px;
+.image{
+    transition: 0.5s ease;
+}
+
+.middle{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text:hover{
+    border-radius: 10px;
+    background-color: #6c757d;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.middle a{
+    color: white;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+#foto-profil img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+}
+
+@media(max-width: 425px) {
+    #foto-profil{
+        padding-block: 20px;
     }
 
-    .certificate ul{
-        padding-left: 5px;
-    }
-
-    .portfolio h2{
-        font-size: 20px;
-    }
-
-    .portfolio img{
-        width: 150px;
-        height: 150px;
-    }
-
-    .portfolio .list-skill .icon{
-        width: 70px;
-        height: 70px;
+    #foto-profil img{
+        width: 200px;;
     }
 }
