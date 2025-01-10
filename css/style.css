@@ -9,6 +9,11 @@ a{
     text-decoration: none;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 li{
     list-style: none;
 }
@@ -25,6 +30,10 @@ li{
 
 .card:hover .middle{
     opacity: 1;
+}
+
+.card-img-size{
+    width: 25rem;
 }
 
 .image{
